@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Istiqamah Privacy Policy</title>
+<meta name="description" content="How the Istiqamah prayer tracker handles your information: everything stays on your phone.">
+<style>
+/* Layout: a single sheet of parchment on a warm desk, one readable column, a short "at a glance" summary before the full policy. Matches the Istiqamah app theme. System fonts only, so the page loads nothing from other servers. */
+:root {
+  --desk: #EFEBE3;
+  --paper: #FAF8F5;
+  --ink: #1B1C1A;
+  --ink-soft: #545F5C;
+  --rule: #E8E4DC;
+  --teal: #0D5C58;
+  --teal-wash: #E3F3EE;
+  --font-display: Georgia, "Noto Serif", "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --desk: #0C0F0E; --paper: #1A1F1E; --ink: #E8ECEA; --ink-soft: #A9B4B1;
+    --rule: #2C3432; --teal: #6CC3BA; --teal-wash: #1F3D3A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --desk: #0C0F0E; --paper: #1A1F1E; --ink: #E8ECEA; --ink-soft: #A9B4B1;
+  --rule: #2C3432; --teal: #6CC3BA; --teal-wash: #1F3D3A; color-scheme: dark;
+}
+body {
+  background: var(--desk); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65;
+  margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 56px;
+}
+.sheet {
+  max-width: 720px; margin: 0 auto; background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 16px;
+  padding: clamp(24px, 6vw, 56px);
+  box-shadow: 0 1px 0 var(--rule), 0 12px 32px -20px rgba(13,92,88,.28);
+}
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+.mark {
+  width: 40px; height: 40px; border-radius: 10px; background: var(--teal);
+  display: grid; place-items: center; flex: none;
+}
+.mark svg { width: 22px; height: 22px; }
+.brand-name { font-family: var(--font-display); font-weight: 700; font-size: 20px; }
+.brand-sub { font-size: 13px; color: var(--ink-soft); }
+.brand-ar { font-size: 13px; color: var(--ink-soft); margin-inline-start: 6px; }
+h1 {
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 6vw, 40px);
+  line-height: 1.15; margin: 0 0 8px; text-wrap: balance;
+}
+.meta { color: var(--ink-soft); font-size: 14px; margin: 0 0 32px; }
+.glance {
+  background: var(--teal-wash); border-radius: 12px; padding: 20px 22px; margin-bottom: 40px;
+}
+.glance h2 {
+  font-family: var(--font-body); font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--teal); margin: 0 0 12px;
+}
+.glance ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.glance li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
+.glance li svg { width: 18px; height: 18px; margin-top: 4px; color: var(--teal); }
+section { border-top: 1px solid var(--rule); padding-top: 28px; margin-top: 28px; }
+section h2 {
+  font-family: var(--font-display); font-weight: 700; font-size: 22px;
+  margin: 0 0 10px; text-wrap: balance;
+}
+p, li { max-width: 65ch; }
+p { margin: 0 0 14px; }
+section ul { margin: 0 0 14px; padding-left: 20px; display: grid; gap: 6px; }
+a { color: var(--teal); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 2px; }
+.contact {
+  display: inline-block; font-weight: 600; background: var(--teal-wash);
+  padding: 6px 12px; border-radius: 8px; user-select: all; word-break: break-all;
+}
+footer { margin-top: 40px; font-size: 13px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<main class="sheet">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="#FAF8F5"><path d="M12 2.5l2.2 7.3 7.3 2.2-7.3 2.2L12 21.5l-2.2-7.3L2.5 12l7.3-2.2z"/></svg>
+    </div>
+    <div>
+      <div class="brand-name">Istiqamah <span class="brand-ar" lang="ar" dir="rtl">استقامة</span></div>
+      <div class="brand-sub">by Khan Labs Ltd</div>
+    </div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 21 October 2026 · Applies to Istiqamah for Android (com.khanlabsltd.istiqamah)</p>
+
+  <div class="glance">
+    <h2>At a glance</h2>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span>Your prayer record stays on your phone. We never receive it.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span>Prayer times and the Qibla direction are calculated on your phone.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span>No account, no sign-up, no ads, no analytics, no tracking.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span>We don't collect, sell or share your personal information.</span></li>
+    </ul>
+  </div>
+
+  <p>This policy explains how Istiqamah ("the app"), a daily prayer tracker, handles your information. The app is made by Khan Labs Ltd ("we", "us"), an independent developer based in Pakistan.</p>
+
+  <section>
+    <h2>Information we collect</h2>
+    <p>We do not collect any personal information. The app has no account system, no analytics, no advertising and no servers of our own, and it does not send your data over the internet. We cannot see your prayer record or anything else you do in the app.</p>
+  </section>
+
+  <section>
+    <h2>What the app keeps on your phone</h2>
+    <p>To work, the app saves the following only on your device:</p>
+    <ul>
+      <li>which prayers you marked as prayed, by date, and your streaks</li>
+      <li>make-up (qada) prayer counts, if you use that feature</li>
+      <li>your settings: the location you chose, calculation method, minute adjustments, reminders, Hijri date adjustment and theme</li>
+    </ul>
+    <p>Your practice is personal. This information is never sent to us.</p>
+  </section>
+
+  <section>
+    <h2>Location</h2>
+    <p>The app needs a location to calculate prayer times and the Qibla direction. You can choose a city from a list, or let the app use your phone's location.</p>
+    <p>If you choose "Use my location", the app asks for approximate location only, never precise location. Your coordinates are saved on your phone and used there for these calculations. The app does not track your location in the background and does not send it anywhere.</p>
+    <p>On Android, approximate location is provided by your phone's location services, which use Google Play services. See <a href="#google">Google services</a> below.</p>
+  </section>
+
+  <section>
+    <h2>Compass</h2>
+    <p>The Qibla screen reads your phone's compass and motion sensors while it is open, to point the way. Sensor readings are used on the spot and are not saved.</p>
+  </section>
+
+  <section>
+    <h2>Prayer reminders</h2>
+    <p>If you turn on reminders, the app schedules notifications on your phone for each prayer time. They are created and shown by your phone. No reminder information is sent to us or to a notification service.</p>
+  </section>
+
+  <section>
+    <h2>Home-screen widget</h2>
+    <p>If you add the Istiqamah widget, it shows your prayer times and today's progress on your home screen, using the same information saved on your phone. Anyone who can see your home screen can see what the widget shows.</p>
+  </section>
+
+  <section>
+    <h2>Backups</h2>
+    <p><strong>Backup files you save.</strong> "Save backup" creates a file with your prayer record and make-up prayer counts, and opens Android's share menu so you can save it where you choose, for example Google Drive. "Restore from backup" lets you pick that file again. The app never uploads a backup by itself. Once you save the file somewhere, that copy is handled by the app or service you chose, under its own privacy policy.</p>
+    <p><strong>Android's automatic backup.</strong> If backup is turned on in your phone's settings, Android may include the app's saved information in your own Google account backup, so it can be restored on a new phone. This backup is run by Android and Google, not by us, and we cannot access it. You can turn it off in your phone's settings.</p>
+  </section>
+
+  <section id="google">
+    <h2>Google services</h2>
+    <p>The app uses Android and Google Play services for approximate location and, if you choose, automatic backup. Google may collect limited information through these services, for example to provide location, under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. We do not receive any of that information.</p>
+  </section>
+
+  <section>
+    <h2>Keeping and deleting your data</h2>
+    <p>Your information stays on your phone until you change or delete it. You can unmark prayers and reset make-up prayer counts in the app at any time. Uninstalling the app or clearing its storage in Android settings removes everything the app saved on your phone. Backup files you saved yourself are kept until you delete them. Because we never receive your data, we have nothing to delete on our side.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The app is a general tool for adults and is not directed at children under 13. We do not knowingly collect information from anyone, including children.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If a future version handles data differently, we will update this policy and the app's Google Play listing before that version is released. The effective date at the top shows when the policy last changed.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app can be sent to:</p>
+    <p><span class="contact">khanlabs@waleedkhan.agency</span></p>
+  </section>
+
+  <footer>© 2026 Khan Labs Ltd. Istiqamah is an independent app. It does not give religious rulings and is not affiliated with Google.</footer>
+</main>
+</body>
+</html>
